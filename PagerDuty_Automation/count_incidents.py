@@ -79,7 +79,7 @@ def export_to_excel(incidents_data, file_name):
     workbook.save(file_name)
 
 if __name__ == "__main__":
-    api_token = "e+i-GkguAd26VyVUvEXg" # your api token
+    api_token = "" # your api token
     start_date = datetime(2024, 5, 28, 0, 0)  # Start date with time
     end_date = datetime(2024, 6, 3, 23, 59)   # End date with time
     file_name = "incidents-count-new.xlsx"
