@@ -74,7 +74,7 @@ def export_to_excel(incidents, service_name, file_name):
 
 
 if __name__ == "__main__":
-    api_token = "e+i-GkguAd26VyVUvEXg" # your api token
+    api_token = "" # your api token
     # end_date = datetime.now()
     # start_date = end_date - timedelta(days=7)  # Default to the last 7 days
     start_date = datetime(2024, 5, 28, 0, 0)  # Start date with time
