@@ -47,7 +47,7 @@ def update_priority(api_token, incident_id):
         "incident": {
             "type": "incident_reference",
             "priority": {
-                "id": "PGM52OZ",  # Priority ID for "P2"
+                "id": "",  # Priority ID for "P1"
                 "type": "priority"
             }
         }
@@ -59,8 +59,8 @@ def update_priority(api_token, incident_id):
         print(f"Failed to update priority for incident {incident_id}: {response.text}")
 
 if __name__ == "__main__":
-    api_token = "e+i-GkguAd26VyVUvEXg" # your api token
-    service_name ="production-critical-issues"  #your service name
+    api_token = "" # your api token
+    service_name =""  #your service name
     start_date = datetime(2024, 5, 28, 0, 0)  # Start date with time
     end_date = datetime(2024, 6, 3, 23, 59)  # End date with time
     
