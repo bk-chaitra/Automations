@@ -17,7 +17,7 @@ def fetch_services(api_token, params=None):
 
 # Example usage:
 if __name__ == "__main__":
-    api_token = "e+i-GkguAd26VyVUvEXg" # your api token
+    api_token = "" # your api token
     params = {"limit": 100}  # Example parameters (you can add more as needed)
     service_names = fetch_services(api_token, params=params)
     print("Service Names:")
