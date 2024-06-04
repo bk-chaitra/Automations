@@ -63,18 +63,18 @@ def check_and_update_priority(api_token, incident):
         "P1": ["[prod][Synthetics Test]", "Pod Restarting", "Pod CrashloopBackOff"]
     }
     incident_title = incident["title"]
-    priority_id = "PDPH1Z9"  # Default to P2 priority ID
+    priority_id = ""  # Default to P2 priority ID
     for priority, keywords in keywords_priority_map.items():
         if any(keyword in incident_title for keyword in keywords):
-            priority_id = "PGM52OZ"  # P1 priority ID
+            priority_id = ""  # P1 priority ID
             break
     update_priority(api_token, incident["id"], priority_id)
 
 if __name__ == "__main__":
-    api_token = "e+i-GkguAd26VyVUvEXg"  # your api token
-    service_name = "user-and-resource-management-events"  # your service name
-    start_date = datetime(2024, 5, 28, 0, 0)  # Start date with time
-    end_date = datetime(2024, 6, 3, 23, 59)  # End date with time
+    api_token = ""  # your api token
+    service_name = ""  # your service name
+    start_date = datetime(2024, 5, 11, 0, 0)  # Start date with time
+    end_date = datetime(2024, 5, 17, 23, 59)  # End date with time
     
     service_id = fetch_service_id(api_token, service_name)
     if service_id:
