@@ -61,7 +61,7 @@ def update_notes(api_token, incident_id, notes):
         print(f"Failed to update notes for incident {incident_id}: {response.text}")
 
 if __name__ == "__main__":
-    api_token = "e+i-GkguAd26VyVUvEXg"#your api token
+    api_token = ""#your api token
     services = [
         "service-1","service-2"
     ]
